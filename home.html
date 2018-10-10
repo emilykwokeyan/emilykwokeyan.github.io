@@ -2,6 +2,16 @@
 <html>
 <head>
   <title>Home page</title>
+  <link rel="stylesheet" href="home_style.css">
+  <script scr="script.js"></script> 
+  <script>
+  function show_topic() { 
+    var x = document.getElementById("demo"); 
+    x.style.fontSize = "25px"; 
+    x.style.color = "red"; 
+    document.getElementById.innerHTML = "My name is" + my_name;
+} 
+</script> 
 </head>
 
 <body>
@@ -17,18 +27,20 @@
 <!-- Main content -->
 <h1>Home page</h1>
 
-<p>Welcome to my styled page!
+<p>Welcome to my styled page!</p>
 
-<p>It lacks images, but at least it has style.
+<p> It lacks images, but at least it has style.
 And it has links, even if they don't go
 anywhere&hellip;
 
-<p>There should be more here, but I don't know
-what yet.
+<p id='demo'>There should be more here, but I don't know
+what yet. </p>
+<button onclick="show_topic();">Click this button!</button>
 
-<!-- Sign and date the page, it's only polite! -->
+<!-- Sign and date the page, its only polite! -->
 <address>Made 5 April 2004<br>
   by myself.</address>
+
 
 </body>
 </html>
